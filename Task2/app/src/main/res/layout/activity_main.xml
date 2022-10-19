@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ProgressBar
+        android:id="@+id/progress_circular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:elevation="2dp"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+
+        <RadioGroup
+            android:id="@+id/radio_gr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rd_user1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#992196F3"
+                android:checked="true"
+                android:text="User id 1"
+                android:layout_marginEnd="05dp"
+                android:textColor="#383838" />
+
+            <RadioButton
+                android:id="@+id/rd_user3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#992196F3"
+                android:text="User id 3"
+                android:layout_marginEnd="05dp"
+                android:textColor="#383838" />
+
+            <RadioButton
+                android:id="@+id/rd_user10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#992196F3"
+                android:text="User id 10"
+
+                android:textColor="#383838" />
+        </RadioGroup>
+
+
+
+        <TextView
+            android:id="@+id/txt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:layout_margin="15dp"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="#383838"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
